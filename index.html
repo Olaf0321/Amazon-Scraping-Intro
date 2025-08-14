@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロジェクト紹介</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="fab fa-node-js"></i> Olaf0321</a>
+    </header>
+
+    <main>
+        <h1 class="main-title">Amazon-Scraping</h1>
+
+        <!-- 代表画像 -->
+        <div class="main-image">
+            <video src="images/1.mp4" autoplay loop muted playsinline
+                style="width:100%; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.6);">
+                お使いのブラウザは動画タグに対応していません。
+            </video>
+        </div>
+
+        <!-- 下の2つの画像 -->
+        <div class="burns">
+            <img class="burn" src="images/2.png" alt="火傷サブ1">
+            <img class="burn" src="images/3.png" alt="火傷サブ2">
+        </div>
+
+        <div class="description">
+            <h2>📌 概要</h2>
+            <p>
+                本ツールは、ASINコードを入力として、Amazonの商品情報を自動で取得し、
+                Excelファイルとして出力するデスクトップアプリケーションです。
+            </p>
+            <p>取得できる情報は以下のとおりです：</p>
+            <ul>
+                <li>商品名（商品タイトル）</li>
+                <li>住所</li>
+                <li>運営責任者名</li>
+                <li>商品ページのURL</li>
+            </ul>
+
+            <h2>🖥️ ツールのインターフェース説明</h2>
+            <h3>🔹 入力ファイル</h3>
+            <p>Excel形式（.xlsx）のファイルをご使用ください。ファイル内にASINコードが記載されている必要があります。</p>
+
+            <h3>🔹 出力フォルダ</h3>
+            <p>処理結果を保存するフォルダを指定してください。出力ファイルは、実行時刻を含んだファイル名（例：出力(2025-04-19 14-35-00).xlsx）で保存されます。</p>
+
+            <h3>🔹 実行ボタン</h3>
+            <p>「実行」ボタンをクリックすると、ASINコードに基づいた情報の取得処理が開始されます。</p>
+
+            <h3>🔹 停止ボタン</h3>
+            <p>「停止」ボタンをクリックすると、現在進行中の処理が終了した後に停止します。
+                停止時点までに処理されたデータは保存され、出力ファイルに出力されます。</p>
+
+            <h2>📂 出力ファイルについて</h2>
+            <ul>
+                <li>出力形式：Excel（.xlsx）</li>
+                <li>ファイル名形式：出力(コード実行時刻).xlsx</li>
+                <li>出力内容：各ASINに対応する「商品名」「住所」「運営責任者名」「URL」</li>
+            </ul>
+
+            <h2>⚠️ 注意事項</h2>
+            <ul>
+                <li>入力ファイルのフォーマットが正しくない場合、正常に動作しない可能性があります。</li>
+                <li>取得対象の商品情報は、Amazon側の仕様変更により取得できなくなる場合があります。</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        開発期間: 2025年4月〜2025年5月
+    </footer>
+
+</body>
+
+</html>
